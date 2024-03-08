@@ -2,8 +2,10 @@
   "name": "@yanbe/hrnet-dropdown",
   "version": "1.0.6",
   "description": "A simple dropdown menu component for React",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "babel src --out-dir dist --copy-files",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
@@ -15,5 +17,15 @@
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-icons": "^5.0.1"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.24.0",
+    "@babel/preset-react": "^7.23.3"
   }
 }
