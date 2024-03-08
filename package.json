@@ -13,6 +13,12 @@
   },
   "author": "yanbe",
   "license": "ISC",
+  "keywords": [
+    "react",
+    "dropdown",
+    "menu",
+    "component"
+  ],
   "dependencies": {
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
