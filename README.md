@@ -8,6 +8,8 @@ A simple dropdown component for React.
 
 - [NPM](https://www.npmjs.com/)
 
+- The recommended IDE to use is Visual Studio Code.
+
 
 ## Description
 
@@ -32,7 +34,8 @@ You can interact with the component with you keyboard. It is entirely focusable.
 
 ## Installation
 
-- You can install the component using : `$ npm i @yanbe/hrnet-dropdown`
+- You can install the component using the following command: 
+- `npm install @yanbe/hrnet-dropdown`
 
 
 ## Usage
@@ -43,7 +46,7 @@ You can import the Dropdown component like this :
 
 ```jsx
 
-import { Dropdown } from "@yanbe/hrnet-dropdown";
+import Dropdown from "@yanbe/hrnet-dropdown";
 
 ``` 
 
@@ -56,8 +59,7 @@ Here is an example of the component being used in a simple way :
 ```jsx
 
 import React, { useState } from "react";
-import { Dropdown } from "@yanbe/hrnet-dropdown";
-
+import Dropdown from '@yanbe/hrnet-dropdown';
 
 
 function App() {
@@ -84,7 +86,13 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div 
+      className="App"
+      style={{ 
+        display: "flex", 
+        flexDirection: "column", 
+        alignItems: "center" 
+      }}>
 
       <h1>Dropdown Demo</h1>
 
